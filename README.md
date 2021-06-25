@@ -73,3 +73,29 @@ It should also run on Chrome on Android and potentially more Android mobile brow
 1. Embed the sample skeleton in ‘skeleton’ group into your illustration by moving the joints around.
 1. Export the file as an SVG file.
 1. Open [Pose Animator camera demo](https://pose-animator-demo.firebaseapp.com/camera.html). Once everything loads, drop your SVG file into the browser tab. You should be able to see it come to life :D
+
+
+Traducción_ instrucciones:
+Anima tu propio diseño
+Descargue el esqueleto SVG de muestra.
+Cree un nuevo archivo en el editor de gráficos vectoriales de su elección. Copie el grupo llamado ‘esqueleto’ del archivo anterior en su archivo de trabajo. Nota:
+
+No agregue, elimine ni cambie el nombre de las uniones (círculos) en este grupo. Pose Animator se basa en estos caminos nombrados para leer la posición inicial del esqueleto. La falta de articulaciones provocará errores.
+Sin embargo, puede mover las articulaciones para incrustarlas en su ilustración. Ver paso 4.
+Cree un nuevo grupo y asígnele el nombre ‘ilustración’, junto al grupo ‘esqueleto’. Este es el grupo donde puede poner todos los caminos para su ilustración.
+Acoplar todos los subgrupos para que ‘ilustración’ solo contenga elementos de ruta.
+Las rutas compuestas no son compatibles en este momento.
+La estructura del archivo de trabajo debería verse así:
+
+[Layer 1]
+|---- skeleton
+|---- illustration
+|---- path 1
+|---- path 2
+|---- path 3
+
+Incruste el esqueleto de muestra en el grupo ‘esqueleto’ en su ilustración moviendo las articulaciones.
+
+Exporte el archivo como un archivo SVG.
+
+Abra la demo de la cámara Pose Animator. Una vez que todo se carga, suelte su archivo SVG en la pestaña del navegador. Deberías poder verlo cobrar vida: D
